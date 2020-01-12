@@ -6,6 +6,13 @@ const readline = require('readline');
 const { google } = require('googleapis');
 const SCOPES = ['https://www.googleapis.com/auth/calendar.readonly'];
 const TOKEN_PATH = 'token.json';
+<<<<<<< HEAD
+=======
+
+
+
+//This is a comment
+>>>>>>> ff5b47af589e0db17453981a6d0a80f0e461bd64
 const port = '3500'
 
 app.use(express.static("/scripts")) 
