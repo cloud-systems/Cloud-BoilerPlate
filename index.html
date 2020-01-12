@@ -10,6 +10,7 @@
         <link rel='stylesheet' type='text/css' media='screen' src='style.css'>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
         <title>Cloud Systems</title>
         <div id= "nav-placeholder">
         </div>
@@ -21,11 +22,57 @@
     </head>
 
     <body>
-        <div style="text-align: center">
-            <h1 class="display-4 jumbo-title">HealthTracks<i class="fal fa-cloud"></i></h1>
-            <a href='log'>Button</a>   
-            <a href='calendar'>Button</a>
+        <div id="clicker">
+        <div class="jumbotron">
+            <h1 class="display-4">Health Tracks</h1>
+            <p class="lead">A simple intuitive application to help individuals manage, store, and learn about their own personal health. </p>
+            <hr class="my-4">
         </div>
-    </body>
 
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                    <div class="card card-signin my-5">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Health Tracks Login</h5>
+                            <form class="form-signin">
+                                <div class="form-label-group">
+                                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address"
+                                        required autofocus>
+                            <break>
+
+                            </break>
+                                </div>
+                                <div class="form-label-group">
+                                    <input type="password" id="inputPassword" class="form-control" placeholder="Password"
+                                        required>
+                                    <hr class="my-4">
+                                </div>
+                                <div onclick="myFunction()">
+                                    <button type="button" class="btn btn-dark btn-lg btn-block" type="submit">Sign In</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div style="display:none" id="newForm">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4" style = "font-family:courier,arial,helvetica;">Characteristics</h1>
+                </div>
+            </div>
+            
+
+        </div>
+        <script>
+            document.getElementById("#newForm").style.display = "none";
+            function myFunction(){
+                $("#clicker").remove()
+                $("#newForm").show()
+            }
+        </script>
+    </body>
 </html>
