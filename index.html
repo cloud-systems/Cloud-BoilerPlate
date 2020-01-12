@@ -7,6 +7,9 @@
             crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+        <script src="/scripts/calcScore.js"></script>
+        <script src="countUp.js"></script>
+        <script src="jquery-3.4.1.js"></script>
         <link rel='stylesheet' type='text/css' media='screen' src='style.css'>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -18,11 +21,6 @@
     <body>
         
         <div id="clicker">
-        <div class="jumbotron">
-            <h1 class="display-4">Health Tracks</h1>
-            <p class="lead">A simple intuitive application to help individuals manage, store, and learn about their own personal health. </p>
-            <hr class="my-4">
-        </div>
 
         
         <div class="container">
@@ -33,11 +31,8 @@
                             <h5 class="card-title text-center">Health Tracks Login</h5>
                             <form class="form-signin">
                                 <div class="form-label-group">
-                                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address"
+                                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" style="margin-bottom:10"
                                         required autofocus>
-                            <break>
-
-                            </break>
                                 </div>
                                 <div class="form-label-group">
                                     <input type="password" id="inputPassword" class="form-control" placeholder="Password"
@@ -45,30 +40,39 @@
                                     <hr class="my-4">
                                 </div>
                                 <div onclick="myFunction()">
-                                    <button type="button" class="btn btn-dark btn-lg btn-block" type="submit">Sign In</button>
+                                    <button type="button" class="btn btn-dark btn-lg btn-block">Sign In</button>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
-        <div style="display:none" id="newForm">
-            <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                    <h1 class="display-4" style = "font-family:courier,arial,helvetica;">Characteristics</h1>
-                </div>
+        </div style="display:none" id="newForm">
+            <div id="wrapper" class="wrapper">
+                <div id="counter">0</div>
+                <button id="start-button">Start Counter</button>
             </div>
-            
+            <script>
+                $('#start-button').click(function(){
+                    var c = new CountUp
+                })
+            </script>
 
         </div>
+
+
         <script>
             document.getElementById("#newForm").style.display = "none";
             function myFunction(){
-                $("#clicker").remove()
-                $("#newForm").show()
+                $("#clicker").fadeOut(1500)
+                function timeFunction() {
+                    setTimeout(function () {
+                        console.log("hi");
+                     }, 2000);
+                }
+                $("#newForm").fadeIn(750)
             }
         </script>
     </body>
+
 </html>
