@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html5>
     <link rel='stylesheet' type='text/css' media='screen' src='C:\Users\ronoy\Cloud_CES_2020\style.css'>
     <head>
@@ -32,3 +33,83 @@
 
     </body>
 </html5>
+=======
+
+<html>
+<link rel='stylesheet' type='text/css' media='screen' src='../style.css'>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src='fullcalendar/core/main.js'></script>
+<script src='fullcalendar/daygrid/main.js'></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                plugins: ['interaction', 'dayGrid', 'timeGrid'],
+                defaultView: 'dayGridMonth',
+                defaultDate: '2019-11-07',
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                },
+                events: [
+                    {
+                        title: 'All Day Event',
+                        start: '2019-11-01'
+                    },
+                    {
+                        title: 'Long Event',
+                        start: '2019-11-07',
+                        end: '2019-11-10'
+                    },
+                    {
+                        groupId: '999',
+                        title: 'Repeating Event',
+                        start: '2019-11-09T16:00:00'
+                    },
+                    {
+                        groupId: '999',
+                        title: 'Repeating Event',
+                        start: '2019-11-16T16:00:00'
+                    },
+                    {
+                        title: 'Conference',
+                        start: '2019-11-11',
+                        end: '2019-11-13'
+                    },
+                    {
+                        title: 'Meeting',
+                        start: '2019-11-12T10:30:00',
+                        end: '2019-11-12T12:30:00'
+                    },
+                    {
+                        title: 'Lunch',
+                        start: '2019-11-12T12:00:00'
+                    },
+                    {
+                        title: 'Meeting',
+                        start: '2019-11-12T14:30:00'
+                    },
+                    {
+                        title: 'Birthday Party',
+                        start: '2019-11-13T07:00:00'
+                    },
+                    {
+                        title: 'Click for Google',
+                        url: 'http://google.com/',
+                        start: '2019-11-28'
+                    }
+                ]
+            });
+
+            calendar.render();
+        });
+</script>
+
+<div id='calendar'>
+
+</div>
+</html>
+>>>>>>> 03c9601c57e9971c7967004df71e84507b4efaaa
