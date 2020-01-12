@@ -19,6 +19,7 @@
   "homepage": "https://github.com/cloud-systems/Cloud_CES_2020#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "googleapis": "^39.2.0",
     "path": "^0.12.7"
   }
 }
