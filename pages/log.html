@@ -7,7 +7,8 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>    <link rel='stylesheet' type='text/css' media='screen' src='style.css'>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>    
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <div id='nav-placeholder'></div>
@@ -23,16 +24,23 @@
       });
     </script>
 </head>
+
+
+
 <body>
     <div class="card text-center">
         <div class="card-header">
           Log Health Information
         </div>
+        <form id="logForm">
         <div class="card-body">
+
           <div class="form-group">
             <div class="slidecontainer">
+              
               <label>Sleep (hours)</label>
-              <input type="range" min="1" max="100" value="50" class="slider" id="sleep">
+              <!--<input type="range" min="1" max="100" value="50" class="slider" id="sleep">-->
+              <input type="number" id="sleep">
             </div>
           </div>
           <div class="form-group">
@@ -52,8 +60,17 @@
               <label>Exercise</label>
               <input type="number" id="exercise">
             </div>
-        </div>
+          </div>
+
+            <Button type="submit">Submit</Button>
+            </form>
+        
+
+        
       </div>
 
+      <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+
+      <script src="main.js"></script>
 </body>
 </html>
