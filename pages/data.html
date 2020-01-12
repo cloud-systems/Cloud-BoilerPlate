@@ -22,6 +22,9 @@
             <!--<div id="chart-Container1">-->
                 <canvas id="sleepChart" width="400" height="400"></canvas>
                 <script>
+                    function newDate(days) {
+                        return moment().add(days, 'd');
+                        }
                     var ctx = document.getElementById('sleepChart').getContext('2d');
                     var myChart = new Chart(ctx, {
                         type: 'line',
@@ -31,7 +34,18 @@
                                 label: '# of Hours of Sleep',
                                 fill: 'false',
                                 lineTension: 0,
-                                data: [12, 19, 3, 5, 2, 3],
+                                data: [{
+                                    x: new Date(2020, 0, 11),
+                                    y: 1
+                                }, {
+                                    t: new Date(2020, 0, 12),
+                                    y: 10
+                                }],
+                                
+
+
+
+
                                 backgroundColor: [
                                     'rgba(255, 99, 132, 0.2)',
                                     'rgba(54, 162, 235, 0.2)',
@@ -56,6 +70,22 @@
                             maintainAspectRatio: false,
                             
                             scales: {
+                                xaXes: [{
+                                    type: 'time',
+                                    time: {
+                                        displayFormats: {
+                                        'millisecond': 'MMM DD',
+                                        'second': 'MMM DD',
+                                        'minute': 'MMM DD',
+                                        'hour': 'MMM DD',
+                                        'day': 'MMM DD',
+                                        'week': 'MMM DD',
+                                        'month': 'MMM DD',
+                                        'quarter': 'MMM DD',
+                                        'year': 'MMM DD',
+                                    }
+                                    }
+                                }],
                                 yAxes: [{
                                     ticks: {
                                         beginAtZero: true
