@@ -1,12 +1,6 @@
 // Initialize Firebase (ADD YOUR OWN DATA)
 var config = {
-    apiKey: "AIzaSyBf0F9bgOwMClbpm7adKI-s_IHakyajM8k",
-      authDomain: "health-data-ae987.firebaseapp.com",
-      databaseURL: "https://health-data-ae987.firebaseio.com",
-      projectId: "health-data-ae987",
-      storageBucket: "health-data-ae987.appspot.com",
-      messagingSenderId: "467532505552",
-      appId: "1:467532505552:web:01d47acbab42814ea2d9d5"
+    
   };
   firebase.initializeApp(config);
   
