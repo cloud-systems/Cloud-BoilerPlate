@@ -35,13 +35,10 @@ app.get('/log', (req, res) => {
     res.sendFile(path.join(__dirname, '/pages/log.html'));
 })
 
-<<<<<<< HEAD
 app.get('/test', (req, res) => {
     res.sendFile(path.join(__dirname, '/pages/test.html'));
 })
 
-=======
->>>>>>> 03c9601c57e9971c7967004df71e84507b4efaaa
 
 app.listen(port, () => {
     console.log('Server is running on http://localhost:3500');
