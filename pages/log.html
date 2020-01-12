@@ -15,6 +15,12 @@
       $.get('nav', function (data) {
         $("#nav-placeholder").replaceWith(data);
       });
+
+      $('#multi1').mdbRange({
+        single: {
+          active: true
+        }
+      });
     </script>
 </head>
 <body>
