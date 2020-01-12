@@ -15,13 +15,16 @@
       $.get('nav', function (data) {
         $("#nav-placeholder").replaceWith(data);
       });
+
+      $('#multi1').mdbRange({
+        single: {
+          active: true
+        }
+      });
     </script>
 </head>
 
 <div class="main container">
-    <form>
-        <form class="multi-range-field my-5 pb-5">
-            <input id="multi1" class="multi-range" type="range" />
-          </form>
-      </form>
+  <p>Hi</p>
+  <input type="range" class="custom-range" id="customRange1">
 </div>

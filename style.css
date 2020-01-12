@@ -1,5 +1,9 @@
 .main.container {
-    margin-top: 500px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f0e68c;
+  align
   }
 
 .center-div{
