@@ -1,3 +1,8 @@
 .main.container {
     margin-top: 500px;
   }
+
+.center-div{
+     margin: 0 auto;
+     width: 100px; 
+}
