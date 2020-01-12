@@ -8,6 +8,8 @@
         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
         <script src="/scripts/calcScore.js"></script>
+        <script src="countUp.js"></script>
+        <script src="jquery-3.4.1.js"></script>
         <link rel='stylesheet' type='text/css' media='screen' src='style.css'>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -41,7 +43,7 @@
                                         required>
                                     <hr class="my-4">
                                 </div>
-                                <div>
+                                <div onclick="myFunction()">
                                     <button type="button" class="btn btn-dark btn-lg btn-block">Sign In</button>
                                 </div>
                             </form>
@@ -50,7 +52,16 @@
                 </div>
             </div>
         </div style="display:none" id="newForm">
-            
+            <div id="wrapper" class="wrapper">
+                <div id="counter">0</div>
+                <button id="start-button">Start Counter</button>
+            </div>
+            <script>
+                $('#start-button').click(function(){
+                    var c = new CountUp
+                })
+            </script>
+
         </div>
 
 
