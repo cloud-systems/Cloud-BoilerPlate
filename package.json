@@ -1,0 +1,24 @@
+{
+  "name": "cloud_ces_2020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloud-systems/Cloud_CES_2020.git"
+  },
+  "author": "CloudSystems",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cloud-systems/Cloud_CES_2020/issues"
+  },
+  "homepage": "https://github.com/cloud-systems/Cloud_CES_2020#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
