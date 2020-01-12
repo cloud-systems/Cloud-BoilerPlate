@@ -52,6 +52,7 @@
         </div>
         </div>
         <div style="display:none" id="newForm">
+            
 
 
         </div>
@@ -60,10 +61,15 @@
             document.getElementById("#newForm").style.display = "none";
             function myFunction(){
                 $("#clicker").fadeOut(1500)
+                function timeFunction() {
+                    setTimeout(function () {
+                        console.log("hi");
+                     }, 2000);
+                }
                 $("#newForm").fadeIn(750)
             }
+            
         </script>
-
-
     </body>
+
 </html>
