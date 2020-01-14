@@ -11,7 +11,7 @@ const port = '3500'
 app.use(express.static("/scripts")) 
 app.use(express.static("/pages")) 
 app.get('/', (req, res) => {
-    res.send(fs.read(path.join(__dirname, req.headers["X-PP-JOHNS"] || "index.html")));
+    res.sendFile(path.join(__dirname, 'index.html'));
 
 })
 
