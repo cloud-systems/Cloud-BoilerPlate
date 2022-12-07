@@ -22,7 +22,7 @@
     "@fullcalendar/daygrid": "^4.3.0",
     "chart.js": "^2.9.3",
     "countup.js": "^2.0.4",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "firebase": "^7.6.2",
     "googleapis": "^39.2.0",
     "mdbootstrap": "^4.11.0",
